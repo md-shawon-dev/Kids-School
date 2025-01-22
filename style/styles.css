@@ -116,6 +116,9 @@
   font-size: 20px;
   font-weight: 400;
 }
+.hero_content h2 br {
+  display: none;
+}
 .hero_content button {
   color: #fff;
   font-size: 20px;
@@ -435,6 +438,9 @@
   .hero_content p {
     font-size: 14px;
     line-height: normal;
+  }
+  .hero_content h2 br {
+    display: block;
   }
   .hero .hero_content button {
     margin: 0 auto;
