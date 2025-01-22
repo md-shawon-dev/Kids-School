@@ -428,14 +428,31 @@
   .hero img {
     width: 100%;
   }
+  .hero_content h2 {
+    font-size: 32px;
+    line-height: normal;
+  }
+  .hero_content p {
+    font-size: 14px;
+    line-height: normal;
+  }
   .hero .hero_content button {
     margin: 0 auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 5px 10px;
   }
   #standard_curriculum {
     background-image: url("/assets/bg.png") lightgray 50% / cover no-repeat;
   }
+  #standard_curriculum .container > h2 {
+    font-size: 26px;
+    line-height: normal;
+  }
   #standard_curriculum .content_container {
     grid-template-columns: 1fr;
+    margin: 40px 0;
   }
   #standard_curriculum .arrow_container {
     display: none;
@@ -443,12 +460,22 @@
   #our_stories .card_container {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  #our_stories .container > h2 {
+    font-size: 26px;
+    line-height: normal;
+  }
+  #our_stories .card_container {
+    margin: 40px 0;
+  }
+  #our_stories .card_container .card .content {
+    padding: 30px 20px 28px 20px;
+  }
   #our_stories .card_container .card .content .badge {
     font-size: 10px !important;
     padding: 5px 10px !important;
     line-height: 15px;
     top: -17px;
+    left: 20px;
   }
   #our_stories .card_container .card:first-child {
     display: none;
