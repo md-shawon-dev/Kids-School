@@ -9,10 +9,18 @@
   max-width: 1159px;
   margin: 0 auto;
 }
+.marq {
+  padding: 10px 0;
+  color: #ffffff;
+}
 /* -----------------header section start */
 .nav {
   display: flex;
+  align-items: center;
   padding: 20px 0;
+}
+.nav .collapse_icon {
+  display: none;
 }
 .logo {
   display: flex;
@@ -218,7 +226,14 @@
 /* standard_curriculum end */
 
 /* our stories start */
-
+#our_stories {
+  background: url("../assets/bg.png") lightgray 0% 0% / 100px 100px repeat,
+    linear-gradient(
+      0deg,
+      rgba(254, 163, 1, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+}
 #our_stories > h2 {
   color: #000;
   text-align: center;
@@ -383,6 +398,17 @@
   .container {
     padding: 0 10px;
   }
+  .nav {
+    border-bottom: 0.5px solid #fea301;
+    padding-bottom: 10px;
+    justify-content: space-between;
+  }
+  .nav .collapse_icon {
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
+    width: fit-content;
+  }
   .nav_links {
     display: none;
   }
@@ -399,6 +425,9 @@
   }
   .hero .hero_content button {
     margin: 0 auto;
+  }
+  #standard_curriculum {
+    background-image: url("/assets/bg.png") lightgray 50% / cover no-repeat;
   }
   #standard_curriculum .content_container {
     grid-template-columns: 1fr;
